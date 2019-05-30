@@ -1,0 +1,350 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  	font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'  
+  ;
+}
+
+
+
+header {
+	position: relative;
+	width: 100%;
+	height: 80px;
+	background: radial-gradient( black,#c5a976);
+	position: fixed;
+	top: 0;
+	z-index: 10;
+}
+
+
+.headline {
+  font-size: 40px;
+  color: white;
+  line-height: 80px;
+  padding: 0 0 0 40px;
+  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+
+}
+
+.header-character {
+	position: absolute;
+	display: inline-block;
+    color: white;
+    top: 33px;
+    right: 50px;
+}
+
+.nav-list{
+  display: table;
+  table-layout: fixed;
+	width: 100%;
+	height: 30px;
+	background: radial-gradient(#c5a976,white);
+	margin-top: 80px;
+}
+
+.nav-list-item {
+  display: table-cell;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+
+.main-visual {
+  width: 100%;
+  height: 350px;
+  background-image: url(img/piano.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.main-visual-content {
+	width: 40%;
+	height: 350px;
+	background-color: rgba(255,255,255,0.5);
+}
+
+
+.main-visual-text {
+	text-align: center;
+	padding-top: 110px;
+	font-size: 17px;
+}
+
+
+.main1{
+	width: 100%;
+	height: 600px;
+	background-image: url(img/inquiry.jpg);
+  background-color: rgba(255,255,255,0.5);
+}
+
+.main1-text {
+  text-align: center;
+  font-size: 24px;
+  padding-top: 5px;
+}
+
+.main1box {
+  width: 100%;
+  height: 556px;
+  background-color: rgba(255,255,255,0.5);
+}
+
+.mainbox-couse{
+  width: 350px;
+  height: 380px;
+  background-color: rgba(255,255,255,0.7);
+  float:left;
+}
+.mainbox-couse:nth-child(1) {
+  margin: 90px 0 0 30px;
+}
+.mainbox-couse:nth-child(2) {
+  margin: 90px 119px 0 119px;
+}
+.mainbox-couse:nth-child(3) {
+  margin: 90px 30px 0 0;
+}
+
+.piano {
+  text-align: center;
+  line-height: 250%;
+}
+
+.ceory {
+  text-align: center;
+  line-height: 240%;
+}
+.other {
+  text-align: center;
+  line-height: 200%;
+}
+
+.main-instructor {
+  width: 100%;
+  height: 600px;
+}
+.main-instructor-text {
+  text-align: center;
+  font-size: 24px;
+  padding-top: 5px;
+}
+.main-instructor1 {
+  width: 100%;
+  height: 278px;
+  background-color: white;
+}
+.instructor-box1{
+  float: left;
+  width: 35%;
+  height: 278px;
+}
+.instructor-image {
+  position: absolute;
+  top: 1140px;
+  left: 90px;
+  float: left;
+  width: 180px;
+  height: 180px;
+}
+
+.instructor-name {
+  padding: 90px 0 0 290px;
+  font-size: 25px;
+}
+
+.instructor-name2 {
+  padding: 0 0 0 340px;
+}
+
+.instructor-status {
+  padding: 0 0 0 290px;
+}
+
+.instructor-box2 {
+  float: left;
+  width: 65%;
+  height: 278px;
+  background-color: white;
+}
+
+.instructor-text {
+  padding-top: 40px;
+}
+
+.instructor-name3 {
+  padding: 40px 0 0 310px;
+  font-size: 25px;
+}
+
+.instructor-name4 {
+  text-align: center;
+  padding: 0 0 0 270px;
+}
+
+.instructor-image2 {
+  position: absolute;
+  top: 1420px;
+  left: 90px;
+  float: left;
+  width: 180px;
+  height: 180px;
+}
+
+.instructor-status2 {
+  padding: 0 0 0 280px;
+  text-align: center;
+}
+
+.presentation {
+  width: 100%;
+  height: 650px;
+  background-color: #ECEFF1;
+}
+
+.presentation-clearfix {
+  width: 100%;
+  height: 650px;
+}
+
+.presentation-text {
+  text-align: center;
+  font-size: 24px;
+  padding-top: 5px;
+}
+
+.presentation-box {
+  width: 81%;
+  height: 500px;
+  margin: 60px auto 0 auto;
+  background-color: #ECEFF1;
+}
+
+.presentation-box1 {
+  float: left;
+  width: 33.3%;
+  height: 250px;
+  background-size: 100% 250px;
+  background-image: url(img/2016.jpg);
+}
+
+.presentation-text2 {
+  float: left;
+  width: 33.3%;
+  height: 250px;
+  background-color: rgba(0,0,0,0.1);
+  padding: 0 9px;
+}
+
+.presentation-box3 {
+  float: left;
+  width: 33.3%;
+  height: 250px;
+  background-size: 100% 250px;
+  background-image:url(img/2014.jpg);
+}
+
+.presentation-text1 {
+  float: left;
+  width: 33.3%;
+  height: 250px;
+  background-color: rgba(0,0,0,0.1);
+  padding: 0 9px;
+}
+
+.presentation-box2 {
+  float: left;
+  width: 33.3%;
+  height: 250px;
+  background-size: 100% 250px;
+  background-image: url(img/2015.jpg);
+}
+
+.presentation-text3 {
+  float: left;
+  width: 33.3%;
+  height: 250px;
+  background-color: rgba(0,0,0,0.1);
+  padding: 0 9px;
+}
+
+.year {
+  text-align: center;
+  font-size: 20px;
+}
+
+.year-text {
+  text-align: left;
+}
+
+.inquiry {
+  width: 100%;
+  height: 750px;
+  background-color: white;
+}
+
+.inquiry-text {
+  text-align: center;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.inquiry-form {
+  text-align: center;
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+.inquiry-email {
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+iframe {
+  float: left;
+  margin: 20px 0 100px 80px;
+}
+
+.map-text {
+  text-align: center;
+  padding-top: 200px;
+  font-size: 30px;
+}
+
+#top-btn{
+  position: fixed;
+  right: 20px;
+  bottom: 80px;
+}
+
+#top-btn img{
+  width: 50px;
+}
+
+footer {
+  width: 100%;
+  height: 80px;
+  background: radial-gradient( white,#ECEFF1);
+}
+
+.footer-text {
+  padding: 20px;
+  font-size: 24px;
+  text-align: right;
+}

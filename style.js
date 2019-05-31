@@ -1,17 +1,17 @@
 $(function(){
 
 
-$('.nav-list-item').hover(
+$('#sp-menu a').hover(
    function(){
 
    	$(this).animate({
-   		'font-size': '16px'
+   		'font-size': '22px'
    	}, 300);
    },
    function(){
 
    	$(this).animate({
-   		'font-size': '14px'
+   		'font-size': '20px'
    	}, 300);
    }
 
@@ -25,12 +25,22 @@ $('#top-btn').click(function(){
   }, 1500)
 });
 
-$('nav a').click(function(){
+$('#sp-menu a').click(function(){
 	var id =$(this).attr('href');
 	var position = $(id).offset().top - 80;
 	$('html,body').animate({
 	  'scrollTop':position
 	}, 1500)
 })
+
+$('.menu-trigger').on('click', function() {
+    $(this).toggleClass('active');
+    $('#sp-menu').fadeToggle();
+    return false;
+  });
+
+$('#sp-menu a[href]').on('click', function(event){
+    $('.menu-trigger').trigger('click');
+});
 
 });

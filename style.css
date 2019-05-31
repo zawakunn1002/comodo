@@ -42,7 +42,94 @@ header {
 	display: inline-block;
     color: white;
     top: 33px;
-    right: 50px;
+    right: 60px;
+}
+
+#hm-icon{
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 10;
+}
+ 
+.menu-trigger,
+.menu-trigger span {
+  display: inline-block;
+  transition: all .4s;
+  box-sizing: border-box;
+}
+ 
+.menu-trigger {
+  position: relative;
+  width: 30px;
+  height: 44px;
+}
+ 
+.menu-trigger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  border-radius: 4px;
+}
+ 
+.menu-trigger span:nth-of-type(1) {
+  top: 0;
+}
+ 
+.menu-trigger span:nth-of-type(2) {
+  top: 20px;
+}
+ 
+.menu-trigger span:nth-of-type(3) {
+  bottom: 0;
+}
+ 
+.menu-trigger.active span:nth-of-type(1) {
+  -webkit-transform: translateY(20px) rotate(-45deg);
+  transform: translateY(20px) rotate(-45deg);
+  background-color: #fff;
+}
+ 
+.menu-trigger.active span:nth-of-type(2) {
+  opacity: 0;
+}
+ 
+.menu-trigger.active span:nth-of-type(3) {
+  -webkit-transform: translateY(-20px) rotate(45deg);
+  transform: translateY(-20px) rotate(45deg);
+　background-color: #fff;
+}
+ 
+ 
+/* ------------------------ */
+/* ------ spメニュー ------ */
+/* ------------------------ */
+ 
+ 
+#sp-menu {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  min-height: 100%;
+  display: none;
+  z-index: 9;
+}
+ 
+#sp-menu li{
+  text-align: center;
+  margin-bottom: 30px;
+}
+ 
+#sp-menu a{
+  color: white;
+  text-decoration: none;
+  padding-top: 50px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .nav-list{
@@ -58,7 +145,7 @@ header {
   display: table-cell;
   text-align: center;
   margin: 0 auto;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 30px;
 }
 

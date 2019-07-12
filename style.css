@@ -1,4 +1,4 @@
-*{
+ *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -42,7 +42,7 @@ header {
 	display: inline-block;
     color: white;
     top: 33px;
-    right: 60px;
+    right: 90px;
 }
 
 #hm-icon{
@@ -61,7 +61,7 @@ header {
  
 .menu-trigger {
   position: relative;
-  width: 30px;
+  width: 50px;
   height: 44px;
 }
  
@@ -112,7 +112,7 @@ header {
   position: fixed;
   top: 80px;
   left: 0;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.7);
   width: 100%;
   min-height: 100%;
   display: none;
@@ -269,8 +269,12 @@ header {
   background-color: white;
 }
 
-.instructor-text {
+.instructor-text1 {
   padding-top: 40px;
+}
+
+.instructor-text2{
+  display: block;
 }
 
 .instructor-name3 {
@@ -435,3 +439,4 @@ footer {
   font-size: 24px;
   text-align: right;
 }
+

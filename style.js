@@ -27,7 +27,7 @@ $('#top-btn').click(function(){
 
 $('#sp-menu a').click(function(){
 	var id =$(this).attr('href');
-	var position = $(id).offset().top - 80;
+	var position = $(id).offset().top - 75;
 	$('html,body').animate({
 	  'scrollTop':position
 	}, 1500)
@@ -44,3 +44,5 @@ $('#sp-menu a[href]').on('click', function(event){
 });
 
 });
+
+
